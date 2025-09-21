@@ -1,4 +1,4 @@
-// swift-tools-version:5.6
+// swift-tools-version:6.2
 
 /**
 *  Splash plugin for Publish
@@ -10,7 +10,7 @@ import PackageDescription
 
 let package = Package(
     name: "SplashPublishPlugin",
-    platforms: [.macOS(.v12)],
+    platforms: [.macOS(.v26)],
     products: [
         .library(
             name: "SplashPublishPlugin",
@@ -20,7 +20,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/peterkovacs/Publish", branch: "swift-markdown"),
 //        .package(url: "https://github.com/johnsundell/Publish.git", from: "0.9.0"),
-        .package(url: "https://github.com/johnsundell/Splash.git", from: "0.16.0")
+        .package(url: "https://github.com/johnsundell/Splash.git", from: "0.16.0"),
     ],
     targets: [
         .target(
